@@ -314,6 +314,8 @@ document.querySelector('body').onclick = () => {
 
 
 	const audio = document.querySelector('audio');
+	let musicToggle = true;
 	audio.addEventListener('ended', (a)=>{
-		audio.src = './我好想妳.mp3';
+		audio.src = musicToggle ? './我好想妳.mp3' : './突然好想妳.mp3';
+		musicToggle = !musicToggle;
 	})
