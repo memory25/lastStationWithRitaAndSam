@@ -15,6 +15,34 @@ p.last{text-align: right;}
 
 
 
+.startBg{
+	position: fixed;
+	transition: linear 10s;
+	opacity: 1;
+	background: rgba(128, 128, 128, 0.9);
+	width: 100vw;
+	height: 100vh;
+	z-index: 999;
+}
+
+.startBg > img{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.startBg > .startText{
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	font-size: 36px;
+	color: #fff;
+	text-align: center
+}
+
+
 #main{
 	color: #fff;
 	overflow: auto;

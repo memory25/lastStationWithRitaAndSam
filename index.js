@@ -203,7 +203,7 @@ const str = `2016.5  幸運地認識了妳
 
 非常謝謝妳，這幾年的陪伴，一起過得更好吧~
 
-
+I LOVE YOU 3000.
 
 
 謝謝妳的
@@ -251,7 +251,14 @@ function generation(i) {
   new Typed(`.test${i}`, options);
 }
 
-generation(0);
+
+setTimeout(()=>{
+	document.querySelector('.startBg').style.opacity = 0.6
+}, 500)
+setTimeout(()=>{
+	document.querySelector('.startBg').style.display = 'none';
+	generation(0);
+}, 5000)
 
 
 
@@ -271,7 +278,7 @@ document.querySelector('.showAll').addEventListener('click', ()=>{
 
 
 
-const imgList = document.querySelectorAll('img');
+const imgList = document.querySelectorAll('img.fade');
 
 
 function fadeImg(count){
